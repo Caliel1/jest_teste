@@ -1,0 +1,42 @@
+{
+  "name": "trabalho-api-cache",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "private": true,
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "test": "jest",
+    "test:app": "jest App.test.js",
+    "test:unit": "jest algoritmos.test.js",
+    "test:carga": "jest carga.test.js"
+  },
+  "dependencies": {
+    "@expo/ngrok": "^4.1.3",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "axios": "^1.7.2",
+    "babel-preset-expo": "^57.0.12",
+    "expo": "^57.0.24",
+    "expo-status-bar": "~57.0.1",
+    "react": "19.2.3",
+    "react-native": "0.86.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@react-native/jest-preset": "^0.86.3",
+    "@testing-library/react-native": "^14.1.0",
+    "jest": "^30.5.2",
+    "jest-expo": "~57.0.6",
+    "react-test-renderer": "^19.2.3",
+    "test-renderer": "^1.3.1"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "testTimeout": 30000,
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}
